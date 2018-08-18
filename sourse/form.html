@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <header class="page-header">
+        <a class="page-header__logo" href="#">
+            <img class="page-header__logo-image" src="https://via.placeholder.com/33x38" alt="Cat Energy" width="33px" height="38px">
+        </a>
+        <img class="page-header__logo-text" src="https://via.placeholder.com/101x18" alt="Cat Energy">
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item">
+                        <a href="./index.html">Главная</a>
+                    </li>
+                    <li class="site-list__item">
+                        <a href="./catalog.html">Каталог Продукции</a>
+                    </li>
+                    <li class="site-list__item site-list__item--active">
+                        <a href="./form.html">Подбор программы</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="page-main">
+
+        <h1 class="visually-hidden">Подбор программы</h1>
+
+        <section class="program-form">
+            <header class="program-form__header">
+                <h2 class="program-form__title">Подбор программы</h2>
+                <p class="program-form__text">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+            </header>
+            <form class="program-form__client-form" action="" method="POST">
+                <label for="program-form__input-name">Имя:*</label>
+                <input class="program-form__input-name" type="text" name="name" id="program-form__input-name" placeholder="Барсик">
+                <label for="program-form__input-weight">Вес (кг):*</label>
+                <input class="program-form__input-weight" type="text" name="weight" id="program-form__input-weight" placeholder="7">
+                <label for="program-form__input-age">Возраст (лет):</label>
+                <input class="program-form__input-age" type="text" name="age" id="program-form__input-age" placeholder="7">
+                <div class="program-form__program-choose-box">
+                    <input class="program-form__program--weight-loss" name="program-toggle" type="radio" id="program-form__program--weight-loss">
+                    <label for="program-form__program--weight-loss">Похудение</label>
+                    <input class="program-form__program--mass-gain" name="program-toggle" type="radio" id="program-form__program--mass-gain">
+                    <label for="program-form__program--mass-gain">Набор массы</label>
+                    <input class="program-form__program--not-sure" name="program-toggle" type="radio" id="program-form__program--not-sure">
+                    <label for="program-form__program--not-sure">Не знаю (Нужен ваш совет)</label>
+                </div>
+                <h3 class="program-form__form-heading">Контактные данные (владельца кота)</h3>
+                <label for="program-form__input-email">E-mail:*</label>
+                <input class="program-form__input-email" type="email" name="email" id="program-form__input-email" placeholder="kuklachev@gmail.com">
+                <label for="program-form__input-phone">Телефон:*</label>
+                <input class="program-form__input-phone" type="phone" name="phone" id="program-form__input-phone" placeholder="8 (960) 900-60-90">
+                <h3 class="program-form__form-heading">Комментарий</h3>
+                <textarea class="program-form__comment" name="comment" id="program-form__comment" placeholder="Расскажите обо всех повадках кота">
+                </textarea>
+                <h3 class="program-form__form-heading">Дополнительно</h3>
+                <input class="program-form__input-additional-sugar" type="checkbox" name="additional" id="program-form__input-additional-sugar">
+                <label for="program-form__input-additional-sugar">Сахарозаменитель</label>
+                <input class="program-form__input-additional-water" type="checkbox" name="additional" id="program-form__input-additional-water">
+                <label for="program-form__input-additional-water">Питьевая вода</label>
+                <input class="program-form__input-additional-milk" type="checkbox" name="additional" id="program-form__input-additional-milk">
+                <label for="program-form__input-additional-milk">Молоко</label>
+                <input class="program-form__input-additional-vitamins" type="checkbox" name="additional" id="program-form__input-additional-vitamins">
+                <label for="program-form__input-additional-vitamins">Витамины</label>
+                <button class="button program-form__button">Отправить заявку</button>
+                <span class="program-form__important-input">* — Обязательные поля</span>
+            </form>
+        </section>
+        <section class="location">
+            <header class="location__header location__header--grey">
+                <h3 class="location__title">приглашаем  к сотрудничеству  дилеров!</h3>
+                <p class="location__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+            </header>
+            <img class="location__map" src="https://via.placeholder.com/280x350" alt="Our location">
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <a class="page-footer__logo" href="#">
+            <img class="page-footer__logo-text" src="https://via.placeholder.com/128x24" alt="Cat Energy" width="128px" height="24px">
+        </a>
+        <div class="page-footer__social social">
+            <ul class="social__list">
+                <li class="social__item">
+                    <a class="social__link social__link--vkontakte" href="#">Мы в Вконтакте</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--instgram" href="#">Мы в Инстаграме</a>
+                </li>
+                <li class="social__item">
+                    <a class="social__link social__link--facebook" href="#">Мы в Фейсбуке</a>
+                </li>
+            </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+            <b class="copyright__text">HTML Academy</b>
+            <img class="copyright__logo" src="https://via.placeholder.com/27x34" alt="Copyright logo">
+        </div>
+    </footer>
+</body>
+</html>
